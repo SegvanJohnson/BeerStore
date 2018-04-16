@@ -1,0 +1,450 @@
+/*  JavaScript 6th Edition
+    
+
+    Filename: OnlineFull.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+
+body {
+   line-height: 2;
+   max-width: 100%;
+   font-family: "Muli", arial, helvetica, sans-serif;
+   text-align: center;
+   height: 100%;
+   margin: 0 auto;
+}
+
+#container{
+	width:100%;
+	height:100%;
+}
+
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+
+a:link, a:visited {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:hover {
+   text-decoration: none;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+
+
+
+/* page header */
+header {
+	
+   text-transform: uppercase;
+   font-size: 5em;
+   margin:0;
+	
+}
+
+header h1 {
+   float: left;
+   width: 1500px;
+   text-align: center;
+   margin-top: 0.2em;
+   background-color: red;
+   position:relative;
+}
+
+/* navigation */
+nav {
+   text-transform: uppercase;
+   width: 702px;
+   position:absolute;
+   left: 258px;
+   top: 12em;
+}
+
+nav ul {
+   text-align: center;
+   padding: 0 10px;
+}
+
+nav ul li {
+   display: inline;
+   padding: 7px 8px;
+   margin: 0 3px;
+   background: rgb(255,232,232);
+   border: 5px solid rgb(116,191,68);
+   border-radius: 10px;
+}
+
+
+nav ul li:hover {
+   background: rgb(227,198,32);
+}
+
+/* main content */
+article {
+   background: white;
+   position: relative;
+   
+}
+
+article h2 {
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: left;
+   margin: 0 0 10px 51px;
+}
+
+form {
+   width: 600px;
+   margin: 0 auto;
+   
+}
+
+fieldset {
+   margin: 10px;
+   padding: 20px 10px 10px;
+   background: rgb(164,188,149);
+   position: relative;
+   border-radius: 10px;
+}
+
+legend span {
+   display: block;
+   position: relative;
+   top: 1em;
+   font-weight: bold;
+}
+
+label {
+   margin-right: 5px;
+}
+
+
+
+/* sidebar */
+aside {
+   width: 258px;
+   padding: 1em;
+   color: rgb(227,198,32);
+   height: 100%;
+   
+}
+
+aside h2 {
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: center;
+}
+
+aside p {
+   padding: 1em;
+}
+ 
+/* footer */
+footer {
+   width: 100%;
+   position: relative;
+   height:40px;
+   background: yellow;
+   bottom:0;
+   /*font-size: 14px;
+   padding: 10px;
+   clear: both;
+   color: rgb(227,198,32);*/
+
+}
+
+footer p {
+   text-align: center;
+   padding: 8px;
+}
+
+
+/* main content */
+article {
+   background: white;
+   position: relative;
+}
+
+article h2 {
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: left;
+   margin: 0 0 10px 51px;
+}
+
+#leftarrow, #rightarrow {
+   background: #696565;
+   color:white;
+   position: absolute;
+   z-index: 30;
+   text-align: center;
+   height: 135px;
+   width: 40px;
+   top: 67px;
+}
+
+article div:hover {
+   cursor: default;
+}
+
+#leftarrow {
+   left: 0;
+}
+
+#rightarrow {
+   right: 0;
+}
+
+#fiveButton {
+   display: block;
+   width: 100%;
+   position: absolute;
+   top: 290px;
+   color: white;
+   text-align: center;
+}
+
+#fiveButton p {
+   width: 20%;
+   margin: 0 auto;
+   line-height: 2em;
+   background: #696565;
+}
+
+#leftarrow p, #rightarrow p {
+   position: relative;
+   top: 50%;
+   margin-top: -0.5em;
+}
+
+figure {
+   position: absolute;
+   -webkit-box-shadow: 10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   -moz-box-shadow:    10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   box-shadow:         10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+}
+
+#fig2 {
+   z-index: 10;
+   left: 13%;
+   top: 34px;
+}
+
+#fig3 {
+   z-index: 20;
+   left: 50%;
+   margin-left: -240px;
+   top: 0;
+}
+
+#fig4 {
+   z-index: 10;
+   right: 13%;
+   top: 34px;
+}
+
+#errorText {
+   display: none;
+   text-align: center;
+   padding: 10px;
+   margin: 0 auto;
+   margin: 15px 15px 0;
+   background: rgb(124,124,136);
+   color: white;
+   border: 2px solid rgb(190,50,38);
+}
+
+/* form */
+form {
+   width: 561px;
+   margin: 0 auto;
+   padding-bottom: 15px;
+}
+
+fieldset {
+   position: relative;
+   padding: 5px 30px 70px 30px;
+   background: white;
+   border-radius: 5px;
+   margin-left: 15px;
+   margin-right: 15px;
+   margin-bottom: 25px;
+}
+
+fieldset:last-of-type {
+   margin-bottom: 0;
+}
+
+legend {
+   font-weight: bold;
+   font-size: 36px;
+   font-family: tangerine, cursive;
+   position: absolute;
+   padding: 10px 0;
+}
+
+input, label, select, textarea, fieldset p, div.errorMessage, #ccNumErrorMessage, #cvvErrorMessage {
+   position: relative;
+   top: 50px;
+   line-height: 1.2em;
+}
+
+input {
+   width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#expMoLabel, #expYrLabel {
+   position: absolute;
+   left: -10000px;
+}
+
+#buttonContainer {
+   width: 100%;
+   text-align: center;
+}
+
+#orderButton {
+   margin: 0 auto;
+   font-family: tangerine, cursive;
+   font-size: 24px;
+   top: 15px;
+   -webkit-appearance: none;
+   display: inline-block;
+}
+
+fieldset.checks input, div.checks input {
+   float: left;
+   margin-right: 5px;
+}
+
+fieldset.checks textarea {
+   margin-left: 21px;
+   width: 90%;
+   height: 50px;
+}
+
+fieldset.text label {
+   width: 8em;
+   text-align: right;
+   float: left;
+   clear: left;
+   margin-right: 10px;
+   margin-top: 5px;
+}
+
+fieldset.text input, fieldset.text select {
+   margin-top: 5px;
+   margin-right: 5px;
+}
+
+fieldset div.errorMessage, #ccNumErrorMessage, #cvvErrorMessage {
+   display: none;
+   color: red;
+   margin-top: 10px;
+}
+
+#ccNumErrorMessage, #cvvErrorMessage {
+   margin-left: 8.5em;
+}
+
+div.checks label {
+   width: auto;
+   text-align: left;
+   float: none;
+   clear: none;
+}
+
+div.inline label, div.inline input, div.inline select, div.inline div {
+   display: inline-block;
+   float: none;
+   text-align: center;
+   width: auto;
+}
+
+div.inline option {
+   text-align: left;
+}
+
+#billFName, #billLName, #delivFName, #delivLName, #billCity, #delivCity, #billPhone, #delivPhone {
+   width: 15em;
+}
+
+#billStreet, #delivStreet, #billEmail, #delivEmail {
+   width: 20em;
+}
+
+#billZip, #delivZip {
+   width: 10em;
+}
+
+#ccNum {
+   width: 16em;
+}
+
+#cvv {
+   width: 4em;
+}
